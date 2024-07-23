@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventour</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/plane-fly.svg"
+      type="image/svg+xal"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="top">
+    <!-- Header -->
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+      <div class="header-top">
+        <div class="container">
+          <a href="tel:+639062417893" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <div class="wrapper">
+              <p class="helpline-title">For Further Inquiries :</p>
+              <p class="helpline-number">+919876543210</p>
+            </div>
+          </a>
+          <a href="#" class="logo">
+            <img src="./images/vizag.png" alt="Adventour" />
+          </a>
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.facebook.com/yovizag?mibextid=ZbWKwL" target="_blank" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://instagram.com/yo.vizag?igshid=MzRlODBiNWFlZA==" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://twitter.com/YoVizag?s=20" target="_blank" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./images/vizag black.png" alt="Adventour" />
+              </a>
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+              <li>
+                <a href="#destination" class="navbar-link" data-nav-link
+                  >Destination</a
+                >
+              </li>
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link
+                  >Hotels</a
+                >
+              </li>
+              <li>
+                <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
+              </li>
+              <li>
+                <a href="#contact-us" class="navbar-link" data-nav-link
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn btn-primary" onclick="scrollToBottom()">ADVENTOUR</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- Hero -->
+        <section id="home" class="hero">
+          <div class="container">
+            <h2 class="h1 hero-title">ADVENTOUR</h2>
+            <p class="hero-text">
+              Explore and discover the hidden wonders of Vizag, a smart city
+              with a very rich culture and surrounded by the purest golden sand
+              beaches in the world.
+            </p>
+            <div class="btn-group">
+              <button class="btn btn-primary" onclick="scrollToBottom()">Learn More</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tour Search -->
+        <section class="tour-search">
+          <div class="container">
+            <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label"
+                  >Search Destination</label
+                >
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Enter Destination"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="people" class="input-label">Pax Number</label>
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="No. of People"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label">Checkin Date</label>
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label">Checkout Date</label>
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                Inquire Now
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Popular -->
+        <section class="popular" id="destination">
+            <p class="section-subtitle">Discover Places</p>
+            <h2 class="h2 section-title">Popular Destinations</h2>
+            <p class="section-text">
+              Vizag is home to many tourist spots may it be crystal-clear beaches
+              to world class man-made structures to the finest foods, a place
+              that has a lot to offer and will always leave you with a lasting
+              impression.
+            </p>
+          <div class="container" id="data-container">
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./images/rk.jpg"
+                      alt="Rk Beach"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p class="card-subtitle">
+                      <a href="https://goo.gl/maps/RqmasL2xRCsCcgNB6">Beach</a>
+                    </p>
+                    <h3 class="h3 card-title">
+                      <a href="https://goo.gl/maps/RqmasL2xRCsCcgNB6">R.K.BEACH</a>
+                    </h3>
+                    <p class="card-text">
+                     RK Beach is a famous sandy beach in Vizag with beautiful views.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./images/hill.jpg"
+                      alt="Kailasagiri"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p class="card-subtitle">
+                      <a href="https://goo.gl/maps/pztGtxNZPUarubW7A">Hills</a>
+                    </p>
+                    <h3 class="h3 card-title">
+                      <a href="https://goo.gl/maps/pztGtxNZPUarubW7A">Kailasagiri</a>
+                    </h3>
+                    <p class="card-text">
+                      Kailasagiri is a hilltop park in Vizag with gardens and a big Lord Shiva and Parvati statue.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./images/zoo.jpg"
+                      alt="Zoo"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p class="card-subtitle">
+                      <a href="https://goo.gl/maps/bp7NNLGqQ6RVetq46">Zoo Park</a>
+                    </p>
+                    <h3 class="h3 card-title">
+                      <a href="https://goo.gl/maps/bp7NNLGqQ6RVetq46">Indira Gandhi Zoo Park</a>
+                    </h3>
+                    <p class="card-text">
+                      Zoo Park is a sprawling zoo in Vizag housing various animals, birds, and reptiles.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <ul class="popular-list">
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./images/temple.jpg"
+                      alt="temple"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p class="card-subtitle">
+                      <a href="https://goo.gl/maps/qeSNwJkkvc6iryQGA">Temple</a>
+                    </p>
+                    <h3 class="h3 card-title">
+                      <a href="https://goo.gl/maps/qeSNwJkkvc6iryQGA">SIMHACHALAM TEMPLE</a>
+                    </h3>
+                    <p class="card-text">
+                      Famous Hindu temple in Vizag known for its ancient architecture and spiritual significance.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./images/aircraft.jpg"
+                      alt="museum"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p class="card-subtitle">
+                      <a href="https://goo.gl/maps/wNC7mAyLuheKWjWQ8">Museum</a>
+                    </p>
+                    <h3 class="h3 card-title">
+                      <a href="https://goo.gl/maps/wNC7mAyLuheKWjWQ8">TU 142 Aircraft Museum</a>
+                    </h3>
+                    <p class="card-text">
+                      A unique museum in Vizag, featuring a decommissioned aircraft displayed for visitors to explore.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="popular-card">
+                  <figure class="card-img">
+                    <img
+                      src="./images/bridge.jpg"
+                      alt="bridge"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p class="card-subtitle">
+                      <a href="https://goo.gl/maps/zJornVyezKASVPnT8">Bridge</a>
+                    </p>
+                    <h3 class="h3 card-title">
+                      <a href="https://goo.gl/maps/zJornVyezKASVPnT8">Divis Bridge</a>
+                    </h3>
+                    <p class="card-text">
+                       A picturesque walkway on the beach in Vizag, offering stunning views of the sea and coastline.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="btn btn-primary" id="load-more-btn">More Destinations</button>
+          </div>
+        </section>
+
+        <section class="package" id="package">
+          <div class="container">
+            <p class="section-subtitle">Best HOTELS </p>
+            <h2 class="h2 section-title">Check out our HOTELS</h2>
+            <p class="section-text">
+              Vizag Hotels offer a diverse range of accommodation options catering to all budgets, 
+              from luxury resorts to budget-friendly lodges. Located near popular tourist attractions 
+              and beaches, these hotels provide convenient access to the city's main sights. With warm 
+              hospitality and modern amenities, visitors can enjoy a comfortable stay while experiencing 
+              the vibrant culture and scenic beauty of Visakhapatnam. Whether for business or leisure, 
+              Vizag Hotels ensure a memorable and relaxing experience for every traveler.
+            </p>
+            <ul class="package-list">
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/hotels/Novotel.jpg"
+                      alt="Novotel"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Novotel Vizag
+                    </h3>
+                    <p class="card-text">
+                      Novotel Hotel Vizag offers a luxurious and contemporary beachfront 
+                      experience with stunning views of the Bay of Bengal
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">3D/2N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">Pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Novotel,vizag</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(52 reviews)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">Rs.4,500.00 <span>/ per person</span></p>
+                    <button class="btn btn-secondary"onclick="hotel1()">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/hotels/Dolphin Hotel.jpg"
+                      alt="Refreshing and Breathtaking Sceneries"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Dolphin Hotel
+                    </h3>
+                    <p class="card-text">
+                      Dolphin Hotel Vizag is a charming seaside retreat that combines 
+                      modern comforts with a touch of traditional Andhra hospitality 
+                      in Visakhapatnam.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">2D/1N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">Pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Dolphin hotel,vizag</p></a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(31 reviews)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">Rs.1,500.00 <span>/ per person</span></p>
+                    <button class="btn btn-secondary" onclick="hotel2()">Book Now</button></a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/hotels/Radisson.jpg"
+                      alt="radisson blu"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Radisson Blu
+                    </h3>
+                    <p class="card-text">
+                      Radisson Blu Hotel Vizag is a stylish and upscale waterfront property 
+                      offering a delightful stay with breathtaking views of the Bay of Bengal in
+                      Visakhapatnam.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">3D/2N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">Pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Radisson blu, Vizag</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(37 reviews)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">Rs.1,100.00 <span>/ per person</span></p>
+                    <button class="btn btn-secondary" onclick="hotel3()">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/hotels/Four Points.jpg"
+                      alt="four points"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                     Hotel Four Points
+                    </h3>
+                    <p class="card-text">
+                      Four Points Hotel Vizag is a contemporary and comfortable choice for travelers, 
+                      offering a convenient stay in the heart of Visakhapatnam's commercial district.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">3D/2N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">Pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">Four Points, vizag</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(52 reviews)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">Rs.4,500.00 <span>/ per person</span></p>
+                    <button class="btn btn-secondary" onclick="hotel4()">Book Now</button>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="package-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./images/hotels/sunray.jpg"
+                      alt="Experience the Great Holiday on Beach"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h3 card-title">
+                      Sun Ray Resort
+                    </h3>
+                    <p class="card-text">
+                      Sun Ray Resort Vizag is a luxurious beachfront retreat offering 
+                      unparalleled coastal views, world-class amenities, and a serene 
+                      escape from the bustle of daily life.
+                    </p>
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="time"></ion-icon>
+                          <p class="text">3D/2N</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="people"></ion-icon>
+                          <p class="text">Pax: 10</p>
+                        </div>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <div class="meta-box">
+                          <ion-icon name="location"></ion-icon>
+                          <p class="text">sun ray resort, vizag</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="wrapper">
+                      <p class="reviews">(52 reviews)</p>
+                      <div class="card-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+                    </div>
+                    <p class="price">Rs.4,500.00 <span>/ per person</span></p>
+                    <button class="btn btn-secondary" onclick="hotel5()">Book Now</button></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="btn btn-primary">View All HOTELS</button>
+          </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <p class="section-subtitle">Photo Gallery</p>
+            <h2 class="h2 section-title">Photos from Travellers</h2>
+            <p class="section-text">
+              Take a look at some of the moments captured by tourists from
+              around the world who have witnessed the beauty of this City.
+            </p>
+            <ul class="gallery-list">
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./images/hero-banner.jpg" alt="Gallery Image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./images/pic 1.jpg" alt="Gallery Image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./images/pic 2.jpg" alt="Gallery Image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./images/tch.jpg" alt="Gallery Image" />
+                </figure>
+              </li>
+
+              <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="./images/pic 4.jpg" alt="Gallery Image" />
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta" id="contact">
+          <div class="container">
+            <div class="cta-content">
+              <p class="section-subtitle">Call to Explore</p>
+              <h2 class="h2 section-title">Don't miss this out!</h2>
+              <p class="section-text">
+                Enjoy life while you still can! We are committed to helping
+                tourists get the best of what Adventour has to offer, so what are you
+                waiting for? Call us now and avail one of our promo tours for
+                this year!
+              </p>
+            </div>
+            <button class="btn btn-secondary" onclick="scrollToBottom()">Contact Us!</button>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact-us">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./images/vizag.png" alt="Cebu Travels" />
+            </a>
+            <p class="footer-text">
+              TechWiz is a company which comprises of motivated individuals who
+              are committed to ensuring that tourists get the best out of what
+              Cebu has to offer.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h4 class="contact-title">Contact Us</h4>
+            <p class="contact-text">Feel free to contact and reach us!</p>
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+639062417893" class="contact-link"
+                  >+919876543210</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:drianneberids@gmail.com" class="contact-link"
+                  >example@gmail.com</a
+                >
+              </li>
+
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+                <address>Vizag City, Adventour</address>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form">
+            <p class="form-text">
+              Subscribe to our newsletter for more updates and news!
+            </p>
+            <form action="" class="form-wrapper">
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder="Enter Your Email"
+                required
+              />
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2023 <a href="">Adventour</a>. All Rights Reserved
+          </p>
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Go To Top -->
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+    <!-- Ionicon Link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+
+      let loadMoreBtn = document.querySelector('#load-more');
+      let currentItem = 3;
+      
+      loadMoreBtn.onclick = () =>{
+         let boxes = [...document.querySelectorAll('.container .box-container .box')];
+         for (var i = currentItem; i < currentItem + 3; i++){
+            boxes[i].style.display = 'inline-block';
+         }
+         currentItem += 3;
+      
+         if(currentItem >= boxes.length){
+            loadMoreBtn.style.display = 'none';
+         }
+      }
+      
+      </script>
+      <script>
+        function scrollToBottom() {
+          window.scrollTo(0, document.body.scrollHeight);
+        }
+      </script>
+      <script>
+        function hotel1() {
+          window.location.href = "https://www.novotel-visakhapatnam.com/";
+        }
+        function hotel2() {
+          window.location.href = "https://www.dolphinhotelsvizag.com/";
+        }
+        function hotel3() {
+          window.location.href = "https://www.radissonhotels.com/en-us/hotels/radisson-blu-resort-visakhapatnam";
+        }
+        function hotel4() {
+          window.location.href = "https://www.marriott.com/en-us/hotels/vtzfp-four-points-visakhapatnam/overview/";
+        }
+        function hotel5() {
+          window.location.href = "https://sunrayvillageresort.com/";
+        }
+      </script>
+  </body>
+</html>
